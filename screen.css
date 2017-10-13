@@ -23,12 +23,14 @@ html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
   background-color: plum;
+  font-family: fantasy;
 
 }
 body {
   padding-top: 3.667em; /* 66 / 18 = 3.667... */
   padding-right: 1.222em; /* 22 / 18 = 1.2222222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
+  padding-bottom: :1.222em;
 }
 
 #header{
@@ -45,7 +47,7 @@ p {
 }
 
 h1 {
-  font-size: 2.369em; /* 42.635 / 18 = 2.369 */
+  font-size: 1.369em; /* 42.635 / 18 = 2.369 */
   line-height: 1.032em; /* 44 / 42.635 = 1.032 */
   padding-bottom: 0.516em; /* 22 / 42.635 = 0.516 */
   font-weight: bold;
@@ -56,7 +58,7 @@ h2 {
   padding-bottom: 0.688em; /* 22 / 31.984 = 0.688 */
 }
 h3 {
-  font-weight: normal;
+  font-weight: bold;
 }
 
 ul {
@@ -76,13 +78,13 @@ li {
   list-style-type: circle;
 }
 li li{
-  list-style-type: lower-roman;
+  list-style-type: disc;
 }
 li {
   padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
 }
 li li:last-child {
-  padding-bottom: 0;
+  padding-bottom: 1.222;
 }
 
 /* Responsive Media */
