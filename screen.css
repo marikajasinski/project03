@@ -6,7 +6,6 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html,.stylelint{line-height:1}body,.stylelint{line-height:inherit}ol,ul,.stylelint{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
-/* Begin site styles below */
 
 /* Base Styles */
 /*
@@ -24,12 +23,16 @@ html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
   background-color: plum;
-  
+
 }
 body {
   padding-top: 3.667em; /* 66 / 18 = 3.667... */
   padding-right: 1.222em; /* 22 / 18 = 1.2222222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
+}
+
+#header{
+  text-align: center;
 }
 
 
@@ -45,6 +48,7 @@ h1 {
   font-size: 2.369em; /* 42.635 / 18 = 2.369 */
   line-height: 1.032em; /* 44 / 42.635 = 1.032 */
   padding-bottom: 0.516em; /* 22 / 42.635 = 0.516 */
+  font-weight: bold;
 }
 h2 {
   font-size: 1.777em; /* 31.984 / 18 = 1.777 */
@@ -52,17 +56,15 @@ h2 {
   padding-bottom: 0.688em; /* 22 / 31.984 = 0.688 */
 }
 h3 {
-  font-weight: bold;
+  font-weight: normal;
 }
 
-ol, ul {
+ul {
   padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
 }
-ol {
-  list-style-type: decimal;
-}
+
 ul {
-  list-style-type: square;
+  list-style-type: georgian;
 }
 li ol,
 li ul {
@@ -70,10 +72,10 @@ li ul {
   padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
   padding-bottom: 0;
 }
-li ol {
-  list-style-type: lower-alpha;
+li {
+  list-style-type: circle;
 }
-li li ol {
+li li{
   list-style-type: lower-roman;
 }
 li {
@@ -87,8 +89,9 @@ li li:last-child {
 img,
 video,
 audio {
-  display: block;
+  display: grid;
   max-width: 100%;
+
 }
 
 /* Layout Styles */
