@@ -24,6 +24,7 @@ html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
   background-color: plum;
+  
 }
 body {
   padding-top: 3.667em; /* 66 / 18 = 3.667... */
