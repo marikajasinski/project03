@@ -22,8 +22,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
-  background-color: plum;
-  font-family: fantasy;
+  background-color:#FFD0FF;
+  font-family:sans-serif;
 
 }
 body {
@@ -58,7 +58,7 @@ h2 {
   padding-bottom: 0.688em; /* 22 / 31.984 = 0.688 */
 }
 h3 {
-  font-weight: bold;
+  font-weight:normal;
 }
 
 ul {
@@ -75,10 +75,10 @@ li ul {
   padding-bottom: 0;
 }
 li {
-  list-style-type: circle;
+  list-style-type:none;
 }
 li li{
-  list-style-type: disc;
+  list-style-type: none;
 }
 li {
   padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
