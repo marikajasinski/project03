@@ -47,7 +47,7 @@ p {
 }
 
 h1 {
-  font-size: 1.369em; /* 42.635 / 18 = 2.369 */
+  font-size: 2em; /* 42.635 / 18 = 2.369 */
   line-height: 1.032em; /* 44 / 42.635 = 1.032 */
   padding-bottom: 0.516em; /* 22 / 42.635 = 0.516 */
   font-weight: bold;
@@ -55,7 +55,7 @@ h1 {
 h2 {
   font-size: 1.777em; /* 31.984 / 18 = 1.777 */
   line-height: 1.032em; /* 33 / 31.984 = 1.032 */
-  padding-bottom: 0.688em; /* 22 / 31.984 = 0.688 */
+  padding-bottom: 1.5em; /* 22 / 31.984 = 0.688 */
 }
 h3 {
   font-weight:normal;
@@ -111,18 +111,15 @@ audio {
   left: 0;
   background-color: SkyBlue;
 }
-#navigation li {
-  float: left;
-  width: 33.3333333333%;
-  background-color: green;
-}
+
 #navigation a {
   display: block;
   width: 100%;
   padding-top: 0.611em; /* 11 / 18 = 0.611 */
   padding-bottom: 0.611em;
   text-align: center;
-  text-decoration: none;
+  text-decoration: underline;
+  border
   color: white;
   background-color: LightSeaGreen;
 }
