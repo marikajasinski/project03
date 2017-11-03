@@ -13,7 +13,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 html {
   font-size: .88em;
-  line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
+  line-height: 1.222em; /* 22 / 18 = 1.222 */
   font-family: Georgia, serif;
   background-color: #C1CDCD;
   color: black;
@@ -21,8 +21,8 @@ html {
 }
 body {
   padding-top: 3.667em; /* 66 / 18 = 3.667... */
-  padding-right: 1.222em; /* 22 / 18 = 1.2222222222 */
-  padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
+  padding-right: 1.222em; /* 22 / 18 = 1.222 */
+  padding-left: 1.222em; /* 22 / 18 = 1.222 */
 }
 
 p {
@@ -75,12 +75,7 @@ img {
 }
 
 /* Layout Styles */
-/*
-  Hint: these tend to be
-  1. IDs; but also classes, sometimes
-  2. concerned with layout and spatial
-     relationships
-*/
+
 #status{
   text-align: center;
   padding-bottom: 1em;
@@ -119,6 +114,7 @@ img {
 }
 #navigation a:hover{
   background-color: #CD8C95;
+  color:black;
 }
 .flexbox #navigation ul {
   display: flex;
