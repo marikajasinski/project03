@@ -14,7 +14,7 @@ html {
   font-size: .88em;
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
   font-family: Georgia, serif;
-  background-color: #C1CDCD; 
+  background-color: #C1CDCD;
   color: black;
 
 }
@@ -96,6 +96,7 @@ img {
   padding-top: 3em;
   text-align: center;
   font-style: italic;
+  font-size: 0.8em;
 }
 #navigation {
   position: absolute;
