@@ -5,45 +5,28 @@
 /* stylelint-disable */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html,.stylelint{line-height:1}body,.stylelint{line-height:inherit}ol,ul,.stylelint{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
-
-
 /* Base Styles */
-/*
-  Hint: these tend to be
-  1. element selectors
-  2. concerned with color and typography
-  3. basic element presenation
-*/
-
 /*
   Setting type with a 4:3 modular scale
   http://www.modularscale.com/?18&px&1.333
 */
 html {
-  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  font-size: .88em;
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
-  background-color:#FFD0FF;
-  font-family:sans-serif;
+  font-family: Georgia, serif;
+  background-color: #C1CDCD; 
+  color: black;
 
 }
 body {
   padding-top: 3.667em; /* 66 / 18 = 3.667... */
   padding-right: 1.222em; /* 22 / 18 = 1.2222222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
-  padding-bottom: :1.222em;
 }
 
-#header{
-  text-align:left;
-}
-
-
-h1,
-h2,
-h3,
-h4,
 p {
-  padding-bottom: 1.222em; /* 22 / 18 = 1.2222222222 */
+  text-indent: 1em;
+  padding-bottom: 1em;
 }
 
 h1 {
@@ -53,47 +36,42 @@ h1 {
   font-weight: bold;
 }
 h2 {
-  font-size: 1.777em; /* 31.984 / 18 = 1.777 */
+  font-size: 1.4em; /* 31.984 / 18 = 1.777 */
   line-height: 1.032em; /* 33 / 31.984 = 1.032 */
-  padding-bottom: 1.5em; /* 22 / 31.984 = 0.688 */
+  padding-bottom: 0.688em; /* 22 / 31.984 = 0.688 */
+  font-weight: bold;
 }
 h3 {
-  font-weight:normal;
+  font-size: 1.2em;
+  font-weight: normal;
+  padding-bottom: 1em;
+  text-decoration: underline;
+}
+
+h4{
+  font-size: 1.03em;
+  padding-bottom: 1em;
 }
 
 ul {
-  padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
+  padding-bottom: 1em;
 }
 
-ul {
-  list-style-type: georgian;
-}
-li ol,
-li ul {
-  padding-top: 0.611em; /* 11 / 18 = 0.6111111 */
-  padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
-  padding-bottom: 0;
-}
 li {
-  list-style-type:none;
-}
-li li{
   list-style-type: none;
+  padding-bottom: 0.611em;
 }
-li {
-  padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
-}
-li li:last-child {
-  padding-bottom: 1.222;
+figcaption {
+  font-size: 0.75em;
+  text-align: center;
 }
 
 /* Responsive Media */
-img,
-video,
-audio {
-  display: grid;
+img {
+  padding-top: 2em;
+  display:grid;
   max-width: 100%;
-
+  margin: 0 auto;
 }
 
 /* Layout Styles */
@@ -103,31 +81,55 @@ audio {
   2. concerned with layout and spatial
      relationships
 */
-
+#status{
+  text-align: center;
+  padding-bottom: 1em;
+  list-style-type: none;
+}
+#header{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  line-height: .5em;
+}
+#footer {
+  padding-top: 3em;
+  text-align: center;
+  font-style: italic;
+}
 #navigation {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
-  background-color: SkyBlue;
 }
-
+#navigation li {
+  float: left;
+  width: 33.3333333333%;
+}
 #navigation a {
   display: block;
   width: 100%;
   padding-top: 0.611em; /* 11 / 18 = 0.611 */
   padding-bottom: 0.611em;
   text-align: center;
-  text-decoration: underline;
-  border
   color: white;
-  background-color: LightSeaGreen;
+  background-color: #8B5F65;
+}
+#navigation a:hover{
+  background-color: #CD8C95;
 }
 .flexbox #navigation ul {
   display: flex;
 }
 .flexbox #navigation li {
   float: none;
+}
+#music h2{
+  padding-top:2em;
+}
+#music img{
+  padding: 0;
 }
 
 
@@ -140,7 +142,14 @@ audio {
   2. concerned with adjustments to base styles,
       spacing, color, etc. etc.
 */
+#skills li{
+  line-height: 0.5em;
+  list-style-type: disc;
+}
+#exp li{
+list-style-type: disc;
 
+}
 #navigation ul,
 #navigation li {
   list-style-type: none;
