@@ -14,8 +14,11 @@ html {
   background-color: #202020;
   color: #F0FFFF;
   font-family: 'Open Sans', sans-serif;
-}
 
+}
+.w3-content{
+  max-width:87.500em;
+}
 #content {
   padding-top: 4em;
   padding-left: 3%;
